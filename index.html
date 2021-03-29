@@ -10,6 +10,12 @@
         var arr=new Array();
         for(var i=start;i<=end;i++)
         {
+          if(i===1)
+          {
+            continue;
+          }
+          else
+          {
           var n=0;
           for(var j=2;j<=i/2;j++)
           {
@@ -23,6 +29,7 @@
             arr.push(i);
             document.getElementById("ans").value=arr; 
           }
+        }
         }
       }
     </script>
